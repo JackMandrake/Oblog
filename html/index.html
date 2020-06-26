@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bonus : on inclut une librairie CSS permettant d'afficher des icônes :  -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>oBlog</title>
+  </head>
+  <body>
+    
+    <!-- On utilise le composant navbar de la doc Bootstrap -->
+    <!-- On met navbar-expand-md à partir de la version tablette -->
+    <!-- https://getbootstrap.com/docs/4.3/components/navbar/ -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light p-0">
+        <a class="navbar-brand px-5 border-right" href="#">A la dérive</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- On ajoute ensuite text-center pour le comportement des éléments s'affichant lors du déploiement du menu burger -->
+        <!-- https://getbootstrap.com/docs/4.3/utilities/text/#text-alignment -->
+        <!-- Ici on ajoute la classe justify-content-md-end pour aligner les éléments de menu sur la droite -->
+        <div class="collapse navbar-collapse justify-content-md-end text-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link px-4 active" href="#">Teamback <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link px-4" href="#">Teamfront</a>
+            <a class="nav-item nav-link px-4" href="#">Collaboration</a>
+            <a class="nav-item nav-link px-4" href="#">Ma vie de dev</a>
+            <!--<a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+            </div>
+        </div>
+    </nav>
+
+    <!-- On centre le contenu texte 
+        https://getbootstrap.com/docs/4.3/utilities/text/#text-alignment
+     -->
+    <header class="text-center border-top">
+        <!-- Espacements : https://getbootstrap.com/docs/4.3/utilities/spacing/ -->
+        <!-- Bordures : https://getbootstrap.com/docs/4.3/utilities/borders/ -->
+        <h1 class="border-bottom p-2">A la dérive</h1>
+        <p class="p-2">Un blog collaboratif de développeurs web dérivant délibrérément au milieu de l'espace.</p>
+    </header>
+
+    <!-- https://getbootstrap.com/docs/4.3/layout/grid/ -->
+    <section class="container">
+      <div class="row">
+          <div class="col-lg-8 col-md-12">
+              <!-- Syntaxe emmet : https://devhints.io/emmet -->
+              <!-- emmet : (div.card.mb-4>div.card-header>lorem5^div.card-body>p>lorem40^a[href="#"].card-link{Meta info})*4 -->
+              <!-- https://getbootstrap.com/docs/4.3/components/card/ -->
+              <article class="card mb-4">
+                  <div class="card-header">Lorem ipsum dolor sit amet.</div>
+                  <div class="card-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima at sunt voluptatem doloribus, corporis repellendus voluptates voluptatibus? Ipsam tenetur fugit, ullam accusantium odit, id nam, asperiores culpa odio cum mollitia unde quibusdam facilis suscipit dicta exercitationem voluptatum ad consequatur quidem.</p>
+                      <a href="#" class="card-link">Meta info</a>
+                  </div>
+              </article>
+              <article class="card mb-4">
+                  <div class="card-header">Illo, mollitia aspernatur! In, repellat.</div>
+                  <div class="card-body">
+                      <p>Quasi nisi doloribus nulla animi atque saepe deserunt sapiente? Eius vitae rem non facilis quam animi ipsam eligendi temporibus aliquid saepe. Consequatur eveniet enim beatae et? Aliquid dolorem magni optio illo esse harum blanditiis ad dolores. Officia itaque ex ea.</p>
+                      <a href="#" class="card-link">Meta info</a>
+                  </div>
+              </article>
+              <article class="card mb-4">
+                  <div class="card-header">Non animi doloremque a? Natus.</div>
+                  <div class="card-body">
+                      <p>Suscipit provident quaerat unde expedita eum laborum, recusandae omnis inventore accusantium eos, iusto maiores, necessitatibus ad nobis id. Excepturi modi ducimus cum. Voluptatibus non officiis ducimus, fuga alias recusandae nam reiciendis possimus rem impedit commodi obcaecati expedita debitis qui architecto.</p>
+                      <a href="#" class="card-link">Meta info</a>
+                  </div>
+              </article>
+              <article class="card mb-4">
+                  <div class="card-header">Omnis, ipsam. Dolor, magni ipsam.</div>
+                  <div class="card-body">
+                      <p>Quo veritatis deleniti, ducimus, vel dignissimos debitis a iusto laudantium expedita ea molestias, ad inventore officiis ratione modi quis error veniam quidem fugit! Repudiandae praesentium animi perspiciatis natus quisquam similique exercitationem deserunt fugit ex debitis, odit officia suscipit aliquid? Beatae?</p>
+                      <a href="#" class="card-link">Meta info</a>
+                  </div>
+              </article>
+
+              <!-- https://getbootstrap.com/docs/4.3/components/pagination/ -->
+              <nav aria-label="Page navigation example" class="mb-4">
+                  <ul class="pagination justify-content-between">
+                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+              </nav>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+              <!-- https://getbootstrap.com/docs/4.3/components/forms/ -->
+              <form class="mb-4">
+                  <!-- https://getbootstrap.com/docs/4.3/components/forms/#form-row -->
+                  <div class="form-row">
+                      <div class="col-8">
+                          <input type="text" class="form-control" id="search">
+                      </div>
+                      <div class="col-4">
+                          <button type="submit" class="btn btn-primary form-control">Search</button>
+                      </div>
+                  </div>
+              </form>
+
+              <nav>
+                  <!-- emmet : (div.card.mb-4>div.card-header+ul.list-group.list-group-flush>li.list-group-item*4)*2 -->
+                  <div class="card mb-4 text-center">
+                      <div class="card-header">Catégories</div>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Teamback</li>
+                          <li class="list-group-item">Teamfront</li>
+                          <li class="list-group-item">Collaboration</li>
+                          <li class="list-group-item">Ma vie de dev</li>
+                      </ul>
+                  </div>
+          
+                  <div class="card mb-4 text-center">
+                      <div class="card-header">Auteurs</div>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Maxime</li>
+                          <li class="list-group-item">Dario</li>
+                          <li class="list-group-item">Lucie</li>
+                          <li class="list-group-item">Anthony</li>
+                      </ul>
+                  </div>
+              </nav>
+          </div>
+      </div>
+  </section>
+
+  <footer>
+    <!-- Je crée une nouvelle ligne dans ma grille virtuelle: https://getbootstrap.com/docs/4.1/layout/grid/
+    Je déclare également que ces éléments doivent être centrés (flex): https://getbootstrap.com/docs/4.1/utilities/flex/#justify-content
+    ainsi que leurs textes: https://getbootstrap.com/docs/4.1/utilities/text/#text-alignment -->
+    <div class="row justify-content-center text-center">
+        <div class="col-6 social-networks">
+            <!-- Je créé une liste: https://getbootstrap.com/docs/4.1/components/list-group/ -->
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter-square"
+                            style="font-size: 30px"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook-square"
+                            style="font-size: 30px"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-github-square"
+                            style="font-size: 30px"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Je crée une nouvelle ligne dans ma grille virtuelle: https://getbootstrap.com/docs/4.1/layout/grid/
+    Je déclare également que ces éléments doivent être centrés (flex): https://getbootstrap.com/docs/4.1/utilities/flex/#justify-content
+    ainsi que leurs textes: https://getbootstrap.com/docs/4.1/utilities/text/#text-alignment -->
+    <div class="row justify-content-center text-center">
+        <div class="col-6 links">
+            <!-- Je créé une liste: https://getbootstrap.com/docs/4.1/components/list-group/ -->
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Nous contacter</a></li>
+                <li class="list-inline-item"><a href="#">Qui sommes nous ?</a></li>
+                <li class="list-inline-item"><a href="#">Mentions légales</a></li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
